@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-up__wrapper">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="sign-up-title">
+                <h2>Login</h2>
+            </div>
+            <form id="form" class="sign-up-form">
+                <input id="email" type="text" placeholder="Email">
+                <p class="chek" data-input-email></p>
+                <input id="password" type="password" placeholder="Password">
+                <p class="chek" data-input-password></p>
+                <p class="sign-up-text">Don’t you have an account?&nbsp;&nbsp;<a href="./signup.html">Sign Up</a></p>
+                <button type="submit" class="sign-btn"><a class="login" href="./login.html">Login</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../script/login.js"></script>
+</body>
+</html>

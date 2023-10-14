@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+                <div class="dashboard-wrapper">
+                    <h2 class="dashboard-title">Dashboard</h2>
+                    <div class="account">
+                        <img width="50" src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                       <div class="info">
+                        <h3>Abubakr</h3>
+                        <p>Author</p>
+                       </div>
+                    </div>
+                    <ul class="menu-list">
+                        <li class="list-item" id="create-post">
+                            <a href="#">Create Post</a>
+                        </li>
+                        <li class="list-item" id="manage-post">
+                            <a href="#">Manage Posts</a>
+                        </li>
+                    </ul>
+                    <button class="out"><a href="../index.html">Sign Out ?</a></button>
+                </div>
+                <div class="create-blog">
+                    <h3 class="blog-title">Create New Post</h3>
+                    <div class="line"></div>
+                    <form id="form__blog">
+                        <label>Post title</label>
+                        <input style="color:#000;" id="title" type="text" placeholder="">
+                        <div class="category">
+                           <div>
+                            <label>Post image</label>
+                            <input style="color:#000;"  class="image" type="text">
+                           </div>
+                            <select id="category">
+                                <option selected disabled>Select post category</option>
+                            </select>
+                            <!-- <input type="text" placeholder="category" id="category"> -->
+                        </div>
+                        <label>Post description</label>
+                        <textarea style="color:#000;"  name="" id="text" cols="118" rows="10"></textarea>
+                        <button type="submit" class="create-btn">Create Post</button>
+                    </form>
+                </div>
+                <div class="manage-post">
+                    <div class="manage-post-title">
+                        <h2>Manage posts</h2>
+                        <div class="line"></div>
+                    </div>
+                   <div class="blog-cards">
+                   </div>
+                </div>
+                <div class="delete-popup">
+                    <button class="cancel">X</button>
+                    <h2>Delete Post</h2>
+                    <p>Are you sure to delete this post?</p>
+                    <button  class="delete">Delete</button>
+                </div>
+                <div class="edit-popup">
+                    <button class="edit-cancel">X</button>
+                    <h2 class="edit-title">Update Post</h2>
+                        <label>Post title</label>
+                        <input id="edit-title" type="text">
+                    <select id="category-select">
+                     <option disabled selected>Select post category</option>     
+                    </select>
+                        <label>Post image</label>
+                        <input id="edit-image" type="text">
+                    <label>Post description</label>
+                    <textarea id="edit-desc"  cols="65" rows="10"></textarea>
+                    <button class="create-post-btn">Create Post</button>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="../script/dashboard.js"></script>
+</body>
+</html>

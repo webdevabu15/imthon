@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Home page</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                   <a href="#"> <img src="./images/logo.png" alt=""></a>
+                </div>
+                <ul class="nav__menu">
+                    <li class="login"><a href="./pages/login.html">Login</a></li>
+                    <li class="SignUp"><a href="./pages/signup.html">Sign Up</a></li>
+                    <li class="Dashboard"><a href="./pages/dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./images/banner.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="articles">
+            <div class="container">
+                <div class="articles-title">
+                    <h2>All articles</h2>
+                </div>
+               <!-- <div class="father"> -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          centeredSlides: false,
+        //   autoplay:{
+        //     delay:1000
+        //   },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    <script src="./script/main.js"></script>
+</body>
+</html>

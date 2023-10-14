@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-up__wrapper">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+            </div>
+            <div class="sign-up-title">
+                <h2>Sign Up</h2>
+            </div>
+            <form id="form" class="sign-up-form">
+                <input id="firstname" type="text" placeholder="Firstname">
+                <input id="lastname" type="text" placeholder="Lastname">
+                <input id="email" type="text" placeholder="Email">
+                <p class="chek" data-input-email></p>
+                <input id="password" type="password" placeholder="Password">
+                <p class="chek" data-input-password></p>
+                <p class="sign-up-text">Don’t you have an account?&nbsp;&nbsp;<a href="#">Login</a></p>
+                <button class="sign-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../script/signup.js"></script>
+</body>
+</html>
